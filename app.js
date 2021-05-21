@@ -47,11 +47,14 @@ $(document).ready(function(){
             bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier;
             bookImage = (item.volumeInfo.imageLinks)?item.volumeInfo.imageLinks.thumbnail : placeHolder;
 
+            var viewerUrl = 'read_book.html?isbn='+bookIsbn;
             img = '<img src="'+bookImage+'" class="img-thumbnail">';
             book_name = '<h3>'+title+'</h3>';
             writer = '<h4>Author : '+author+'</h4>';
-            published = '<h4>Publisher : '+publisher+'</h4><hr>';
-            row = img+book_name+writer+published;
+            published = '<h4>Publisher : '+publisher+'</h4>';
+            read = '<a target="_blank" href="'+viewerUrl+'" class="btn btn-secondary"> Read Book </a><hr> ';
+            console.log(read);
+            row = img+book_name+writer+published+read;
             document.getElementById("list-output").innerHTML += row;
         }
     }
