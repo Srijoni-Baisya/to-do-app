@@ -1,0 +1,45 @@
+h1{
+    font-family: 'Texturina', serif;
+    color: rgb(43, 13, 114);
+}
+#output{
+    padding: 10px; 
+    width:80%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+}
+body{
+    background-image:linear-gradient(to bottom right,rgba(0,212,255,100),rgba(75,185,255,100),rgba(45,104,248,100));
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+img{
+    background-color: white;
+}
+h2{
+    font-family: 'Merriweather',serif;
+}
+#myCanvas{
+    background-color: white;
+    border:10px  ridge;
+    width: 100%;
+    height: 600px;
+} 
+button{
+    margin: 10px;
+  
+}
+#body_bg{
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.form-control{
+    width: 70%;
+}
+
+iframe{
+    width: 80%;
+}

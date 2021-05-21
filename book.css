@@ -1,0 +1,24 @@
+body{
+    background-image: url("book_bg.jpg");
+    background-color: #00ffff;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+h2,h1{
+    font-family: 'Bree Serif', serif;
+    color: rgb(34, 7, 70);
+}
+
+
+
+.img-thumbnail{
+    height: 100px;
+    width: 100px;
+}
+#list-output{
+    background-color: pink;
+}

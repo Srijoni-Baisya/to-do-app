@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do-App</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Texturina:wght@500&display=swap" rel="stylesheet"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <center>
+        <h1 id="head">To-Do-App</h1>
+       
+        <input type="text" id="msg" class="form-control" placeholder="Enter a Task">
+        <br>
+        <button onclick="send()"class="btn btn-success">Add Task</button>
+        <br><hr><br>
+		<div  id="output" style="text-align: left;margin-bottom: 70px;"></div>
+       
+	</center>
+</div>
+
+<div class="container">
+    <center>
+        <h2>Feeling Bored? Let's take a look at what you can do to spend your time!</h2>
+        <br>
+        
+        <img class="col-lg-6 col-sm-4 col-md-12 col-xs-12 img-thumbnail" src="song.png" onclick="song()">
+        <img class="col-lg-6 col-sm-4 col-md-12 col-xs-12 img-thumbnail" src="book.png" onclick="book()">
+    </center>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
